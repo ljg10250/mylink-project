@@ -1,0 +1,419 @@
+.mypage-dashboard.mypage {
+  display: block;
+  padding: 32px;
+}
+
+.mypage-dashboard .profile-content {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.mypage-dashboard .mypage-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 44px;
+}
+
+.mypage-dashboard .mypage-navigation {
+  display: flex;
+  gap: 4px;
+  padding: 6px;
+  border-radius: 999px;
+  background: var(--surface);
+}
+
+.mypage-dashboard .mypage-navigation a {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  border-radius: 999px;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.mypage-dashboard .mypage-navigation a:first-child {
+  background: var(--primary);
+  color: var(--surface);
+}
+
+.mypage-dashboard .mypage-header {
+  margin-bottom: 28px;
+}
+
+.mypage-dashboard .mypage-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.mypage-dashboard .mypage-heading h1 {
+  margin: 0;
+  font-size: clamp(28px, 3vw, 40px);
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.mypage-dashboard .mypage-description {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.mypage-dashboard .mypage-overview, .mypage-dashboard .mypage-links-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2.15fr);
+  align-items: start;
+  gap: var(--layout-gap);
+}
+
+.mypage-dashboard .mypage-overview {
+  margin-bottom: 24px;
+}
+
+.mypage-dashboard .mypage-profile-summary {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 8px 0 20px;
+}
+
+.mypage-dashboard .mypage-profile-avatar {
+  width: 76px;
+  height: 76px;
+  font-size: 27px;
+}
+
+.mypage-dashboard .mypage-profile-identity {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.mypage-dashboard .mypage-profile-identity h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.mypage-dashboard .mypage-profile-identity p {
+  margin: 3px 0 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.mypage-dashboard .mypage-visibility-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--background);
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.mypage-dashboard .mypage-visibility-badge.is-public {
+  background: var(--accent-soft);
+  color: #ad3b1d;
+}
+
+.mypage-dashboard .mypage-profile-bio {
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+
+.mypage-dashboard .mypage-profile-details summary {
+  display: flex;
+  width: 100%;
+  list-style: none;
+}
+
+.mypage-dashboard .mypage-profile-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.mypage-dashboard .profile-editor .link-form {
+  margin-top: 20px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+.mypage-dashboard .profile-share {
+  gap: 10px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.mypage-dashboard .profile-share-url {
+  font-size: 12px;
+}
+
+.mypage-dashboard .mypage-public-page-link {
+  display: flex;
+  min-height: 36px;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--foreground);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.mypage-dashboard .link-statistics {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: var(--layout-gap);
+  min-width: 0;
+}
+
+.mypage-dashboard .stats-summary-card {
+  padding: 16px;
+}
+
+.mypage-dashboard .stats-total-highlight {
+  padding: 24px;
+  border-radius: 19px;
+  background: linear-gradient(120deg, #ff8058, var(--accent));
+  color: var(--surface);
+}
+
+.mypage-dashboard .stats-total-highlight h2 {
+  margin-bottom: 14px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.mypage-dashboard .stats-total-value {
+  margin: 0;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.mypage-dashboard .stats-summary-details {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 10px;
+  margin: 12px 0 0;
+}
+
+.mypage-dashboard .stats-summary-details > div {
+  min-width: 0;
+  padding: 16px;
+  border-radius: 17px;
+  background: var(--background);
+}
+
+.mypage-dashboard .stats-summary-details dt {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.mypage-dashboard .stats-summary-details dd {
+  margin: 8px 0 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.mypage-dashboard dd.stats-top-link {
+  font-size: 18px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.mypage-dashboard .link-statistics-list {
+  display: grid;
+  gap: 24px;
+  max-height: 280px;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  list-style: none;
+}
+
+.mypage-dashboard .link-statistics-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(60px, 1.3fr) minmax(32px, auto);
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.mypage-dashboard .stats-link-title {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.mypage-dashboard .stats-bar-track {
+  height: 14px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--background);
+}
+
+.mypage-dashboard .stats-bar-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--primary);
+}
+
+.mypage-dashboard .link-statistics-list li:first-child .stats-bar-track span {
+  background: var(--accent);
+}
+
+.mypage-dashboard .link-add-card h2 {
+  margin-bottom: 4px;
+}
+
+.mypage-dashboard .managed-links-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: var(--background);
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.mypage-dashboard .managed-links-head span:last-child {
+  width: 144px;
+  text-align: center;
+}
+
+.mypage-dashboard .managed-links .profile-links {
+  gap: 0;
+}
+
+.mypage-dashboard .managed-links .profile-links > li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.mypage-dashboard .managed-links .profile-links > li:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.mypage-dashboard .managed-link {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+}
+
+.mypage-dashboard .managed-link .profile-link {
+  justify-content: start;
+  gap: 12px;
+  padding: 8px 0;
+  border: 0;
+  border-radius: 10px;
+}
+
+.mypage-dashboard .managed-link .profile-link:hover {
+  background: var(--background);
+}
+
+.mypage-dashboard .managed-link .profile-link-arrow {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  order: -1;
+  flex-shrink: 0;
+  place-items: center;
+  border-radius: 12px;
+  background: var(--background);
+  color: var(--foreground);
+  font-size: 22px;
+}
+
+.mypage-dashboard .profile-link-title {
+  font-size: 15px;
+}
+
+.mypage-dashboard .profile-link-description {
+  font-size: 12px;
+}
+
+.mypage-dashboard .link-item-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+@media (max-width: 1100px) {
+  .mypage-dashboard .mypage-overview {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .mypage-dashboard .mypage-profile-summary {
+    margin-top: 0;
+  }
+
+  .mypage-dashboard .mypage-links-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .mypage-dashboard.mypage {
+    padding: 20px 16px 32px;
+  }
+
+  .mypage-dashboard .mypage-toolbar {
+    flex-wrap: wrap;
+    gap: 18px;
+    margin-bottom: 28px;
+  }
+
+  .mypage-dashboard .mypage-navigation {
+    width: 100%;
+    order: 1;
+  }
+
+  .mypage-dashboard .mypage-navigation a {
+    flex: 1;
+    padding: 10px 8px;
+  }
+
+  .mypage-dashboard .mypage-statistics, .mypage-dashboard .mypage-links-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .mypage-dashboard .stats-summary-card {
+    padding: 14px;
+  }
+
+  .mypage-dashboard .managed-links-head {
+    display: none;
+  }
+
+  .mypage-dashboard .managed-link {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+  }
+
+  .mypage-dashboard .link-item-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-bottom: 6px;
+  }
+}
